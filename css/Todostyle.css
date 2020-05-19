@@ -1,10 +1,8 @@
-html {
-    height: 100%;
-}
+
 
 body{
 	margin:0px;
-	background:linear-gradient(to right,#00aeae,#ffffff);
+	background:-webkit-linear-gradient(top right,#00aeae,#ffffff);
 	 height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -49,6 +47,7 @@ li:hover{
 	top: 130px;
 	left:700px;
 	font-size: 29px;
+	min-width: 200px;
 	font-family: Agency FB;
 }
 .strikebtn{
@@ -71,13 +70,13 @@ footer{
 	font-size: 22px;
 }
 .input{
-	margin: 290px 150px;
+	margin: 340px 150px;
 	border: 5px solid #000;
 	width: 340px;
 	text-align:center;
 	padding: 0 8px;
 	font-family: Agency FB;
-	opacity: 1;
+	opacity: .6;
 	background-color: #000;
 	box-shadow: 12px 2px 15px;
 }
@@ -114,7 +113,7 @@ button:hover{
 	width: 550px;
 	overflow: scroll;
 	margin:40px;
-	opacity: 1;
+	opacity: .6;
 	background-color: #000;
 	box-shadow: 12px 2px 15px #000;
 	color: #FFF;
