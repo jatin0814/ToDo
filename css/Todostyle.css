@@ -2,6 +2,7 @@ body{
 	margin:0px;
 	background:url('../images/todo3.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 li{
 	list-style: none;
