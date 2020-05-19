@@ -1,6 +1,7 @@
 body{
 	margin:0px;
-	background:linear-gradient(to left,#6e6e6e,#00fbfb);
+	background:url('../images/todo3.jpg');
+	background-size: cover;
 }
 li{
 	list-style: none;
@@ -9,12 +10,17 @@ header{
 	font-family: Ink Free;
 	padding: 0px;
 	font-size: 80px;
+	position: fixed;
+	top:0;
+	right: 0;
+	left:0;
 	border:.1px solid;
 	border-color: #000 #000 #fff;
 	margin-top: 0px;
 	background: linear-gradient(to right, #00aeef, #000);
 	text-align: center;
 	color: #fff;
+	z-index: 1;
 }
 li{
 	margin: 8px;
@@ -58,13 +64,13 @@ footer{
 	font-size: 22px;
 }
 .input{
-	margin: 200px 150px;
+	margin: 290px 150px;
 	border: 5px solid #000;
 	width: 340px;
 	text-align:center;
 	padding: 0 8px;
 	font-family: Agency FB;
-	opacity: 0.6;
+	opacity: 1;
 	background-color: #000;
 	box-shadow: 12px 2px 15px;
 }
@@ -100,7 +106,7 @@ button:hover{
 	height: 400px;
 	width: 550px;
 	overflow: scroll;
-	opacity: 0.6;
+	opacity: 1;
 	background-color: #000;
 	box-shadow: 12px 2px 15px #000;
 	color: #FFF;
