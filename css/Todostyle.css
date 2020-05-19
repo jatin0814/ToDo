@@ -1,8 +1,14 @@
+html {
+    height: 100%;
+}
+
 body{
 	margin:0px;
-	background:url('../images/todo3.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
+	background:linear-gradient(to right,#00aeae,#ffffff);
+	 height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 li{
 	list-style: none;
@@ -40,8 +46,8 @@ li:hover{
 .notask{
 	position: absolute;
 	font-weight: bold;
-	top: 100px;
-	left:650px;
+	top: 130px;
+	left:700px;
 	font-size: 29px;
 	font-family: Agency FB;
 }
@@ -107,6 +113,7 @@ button:hover{
 	height: 400px;
 	width: 550px;
 	overflow: scroll;
+	margin:40px;
 	opacity: 1;
 	background-color: #000;
 	box-shadow: 12px 2px 15px #000;
