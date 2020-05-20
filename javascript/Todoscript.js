@@ -6,7 +6,9 @@ let refreshBtn = document.getElementsByClassName("fa-refresh")[0];
 let listcontent = document.getElementsByClassName("listcontent")[0];
 let listreset = document.getElementsByClassName("reset")[0];
 let notask = document.getElementsByClassName("number")[0];
+let compnumber = document.getElementsByClassName("compnumber")[0];
 let count = 0;
+let count2 = 0;
 
 const createNewElement = () =>{
 	error.innerHTML = "";
@@ -24,6 +26,7 @@ const createNewElement = () =>{
 	button.addEventListener("click", delElement);
 	strikebutton.addEventListener("click", strikeElement);
 	removestrikebutton.addEventListener("click", removestrikeElement);
+	removestrikebutton.disabled = true;
 	let li = document.createElement("li");
 	//li = li.appendChild(document.createTextNode(taskname.value));
 	li.innerHTML = userinput.value;
@@ -61,9 +64,16 @@ const delElement = (event) =>{
 	}
 }
 const removestrikeElement =(event)=>{
-	event.target.parentNode.setAttribute("class","removestrike")
+	compnumber.innerHTML = --count2;
+	console.log(event.target.parentNode.childNodes[2]);
+	event.target.parentNode.childNodes[2].disabled = false;
+	event.target.disabled = true;
+	event.target.parentNode.setAttribute("class","removestrike");
 }
 const strikeElement = (event) =>{
+	compnumber.innerHTML = ++count2;
+	event.target.disabled=true;
+	event.target.parentNode.childNodes[3].disabled = false;
 	event.target.parentNode.setAttribute("class","strikebtn")
 }
 
