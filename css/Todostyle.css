@@ -7,6 +7,9 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-image: url("../images/todo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 li{
 	list-style: none;
@@ -183,6 +186,7 @@ button:hover{
 	width: 550px;
 	overflow: scroll;
 	margin:40px;
+	opacity: .8;
 	background-color: #222222;
 	color: #FFF;
 }
